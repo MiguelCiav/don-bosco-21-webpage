@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es-ve">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Joven</title>
+    <link rel="icon" href="../RESOURCES/LOGO.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <link
+      rel="stylesheet"
+      href="../CSS/tablet.css"
+      media="screen and (min-width: 768px)"
+    />
+    <link
+      rel="stylesheet"
+      href="../CSS/laptop.css"
+      media="screen and (min-width: 1024px)"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;600;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <nav>
+      <div class="user-info">
+        <div class="textbox">
+          <p class="username">Usuario</p>
+          <p>¡Bienvenido!</p>
+        </div>
+        <img src="../RESOURCES/user.png" alt="" />
+      </div>
+    </nav>
+    <div class="form-container">
+      <div class="register_form">
+        <form id="form">
+          <label for="cedula">
+            <span>Número de Cedula</span>
+            <input id="cedula" type="number" required/>
+          </label>
+          <label for="unidad">
+            <span>Unidad</span>
+            <select id="unidad">
+              <option value="manada">Manada</option>
+              <option value="tropa">Tropa</option>
+              <option value="clan">Clan</option>
+            </select>
+          </label>
+          <label for="adelanto">
+            <span>Adelanto</span>
+            <select id="adelanto">
+              <option value="huella-fresca">(Manada) Huella Fresca</option>
+              <option value="huella-alerta">(Manada) Huella Alerta</option>
+              <option value="huella-agil">(Manada) Huella Ágil</option>
+              <option value="huella-libre">(Manada) Huella Libre</option>
+              <option value="aventurero">(Tropa) Aventurero</option>
+              <option value="explorador">(Tropa) Explorador</option>
+              <option value="pionero">(Tropa) Pionero</option>
+              <option value="precursor">(Clan) Precursor</option>
+              <option value="expedicionario">(Clan) Expedicionario</option>
+              <option value="descubridor">(Clan) Descubridor</option>
+              <option value="fundador">(Clan) Fundador</option>
+            </select>
+          </label>
+          <label for="address">
+            <span>Dirección</span>
+            <input id="address" type="text" required/>
+          </label>
+          <label for="proof-of-payment" class="drop-container">
+            <span>Comprobante de Pago (En caso de haber pagado en línea)</span>
+            <input id="proof-of-payment" type="file"/>
+          </label>
+          <button type="submit">Registrarme</button>
+        </form>
+      </div>
+    </div>
+    <script>
+      var form = document.getElementById('form');
+
+      form.addEventListener('submit', function(event){
+        event.preventDefault();
+        alert('Formulario subido exitosamente');
+        location.href = "../../INDEX/HTML/index.html";
+      });
+    </script>
+  </body>
+</html>

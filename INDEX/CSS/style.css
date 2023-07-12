@@ -1,0 +1,237 @@
+/*CONFIGURACION UNIVERSAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 600;
+    margin: 0;
+}
+
+body{
+    margin: 0px;
+}
+
+/*NAVBOARD*/
+
+nav{
+    position: absolute;
+    z-index: 5;
+    display: flex;
+    justify-content: end;
+    width: 100%;
+}
+
+.navbar_logo{
+    min-width: 280px;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    padding-right: 12px;
+}
+
+.logo_text_container{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+}
+
+.navbar_logo .title{
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}
+
+.navbar_logo .subtitle{
+    margin-top: 0px;
+    font-size: 1.2rem;
+}
+
+.navbar_logo img{
+    height: 48px;
+    margin-left: 16px;
+}
+
+/*BANNER*/
+
+.top_section{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-top: 100px;
+}
+
+.banner{
+    margin-bottom: 160px;
+}
+
+.banner_background{
+    height: 625px;
+    overflow: hidden;
+    position: relative;
+}
+
+.triangle{
+    width: 0px;
+    height: 0px;
+    border-right: 4000px solid #fbf090;
+    border-bottom: 4000px solid transparent;
+    position: absolute;
+}
+
+.triangle p{
+    display: none;
+}
+
+/*INSIGNIA*/
+
+.badge_container{
+    position: relative;
+    height: 320px;
+    z-index: 2;
+}
+
+.badge_container .badge{
+    position: absolute;
+    height: 260px;
+    left: 55%;
+    top: 48%;
+    transform: translate(-47%, -50%);
+    z-index: 3;
+}
+
+.badge_container .badge_border{
+    display: none;
+}
+
+/*MODULO DE REGISTRO*/
+
+.register_module{
+    background-color: white;
+    padding: 24px;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    border-radius: 12px;
+    width: 100%;
+    z-index: 4;
+}
+
+.register_module .title{
+    font-size: 2rem;
+    margin-top: 8px;
+    margin-bottom: 0px;
+}
+
+.register_module .title:nth-child(2){
+    margin-top: 4px;
+}
+
+.register_module form{
+    display: flex;
+    flex-direction: column;
+}
+
+.register_module span{
+    margin-top: 16px;
+    margin-bottom: 8px;
+}
+
+.register_module input{
+    border-style: none;
+    background-color: #EEEEEE;
+    height: 44px;
+    width: 100%;
+    border-radius: 4px;
+    padding-left: 8px;
+}
+
+.register_module input:focus{
+    outline-color: rgb(196, 196, 196);
+}
+
+.register_module button{
+    margin-top: 24px;
+    margin-bottom: 8px;
+    height: 52px;
+    padding: 8px;
+    border-radius: 4px;
+    border-style: none;
+    background-color: #FBF090;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+.register_module button:hover{
+    background-color: #c9c074;;
+}
+
+/*ARTICULOS*/
+
+.article-container{
+    padding-left: 12px;
+    padding-right: 12px;
+}
+
+.article{
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;
+    padding: 40px;
+    margin-top: 36px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 16px;
+}
+
+.article .title{
+    font-size: 2.6rem;
+}
+
+.article .text{
+    font-size: 1.8rem;
+    font-weight: 400;
+}
+
+.article img{
+    display: none;
+}
+
+/*FOOTER*/
+
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #622599;
+    margin-top: 64px;
+    padding: 20px;
+    color: white;
+}
+
+footer p{
+    display: none;
+}
+
+footer img{
+    height: 36px;
+}
+
+.contact-details{
+    margin-left: 20px;
+}
+
+.contact-details .social-media{
+    display: flex;
+    align-items: center;
+}
+
+.icons-container img{
+    height: 28px;
+}

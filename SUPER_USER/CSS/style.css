@@ -1,0 +1,123 @@
+/*CONFIGURACIÓN UNIVERSAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+}
+
+/*NAV*/
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 64px;
+    width: 100%;
+    min-width: 280px;
+    padding: 12px 24px;
+    border-radius: 0px 0px 24px 24px;
+    background-color: #FBF090;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info .textbox{
+    margin-right: 8px;
+}
+
+.user-info p{
+    margin: 0px;
+}
+
+.user-info .username{
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+.user-info img{
+    height: 32px;
+}
+
+/*DOWNLOAD MODULES*/
+
+.download-modules-container{
+    padding: 0px 12px 0px 12px;
+    width: fit-content;
+    margin: auto;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.download-module{
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    padding: 24px 12px;
+    min-width: 255px;
+    max-width: 880px;
+    max-height: 335px;
+    border-radius: 12px;
+}
+
+.download-module img{
+    height: 28px;
+    cursor: pointer;
+}
+
+.download-module .top-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.download-module .top-text .title{
+    font-size: 1.6rem;
+    margin: 0px 20px 0px 0px;
+}
+
+.download-user-info-container{
+    display: flex;
+    width: min-content;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    overflow-y: scroll;
+    max-height: 247px;
+}
+
+.download-user-info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #EEEEEE;
+    max-width: 280px;
+    max-height: 69px;
+    width: max-content;
+    padding: 16px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+}
+
+.download-user-info p{
+    margin: 0px;
+}
+
+.download-user-info .textbox{
+    margin-right: 40px;
+}
+
+.download-user-info .textbox .username{
+    font-size: 1.6rem;
+    margin-bottom: 4px;
+}

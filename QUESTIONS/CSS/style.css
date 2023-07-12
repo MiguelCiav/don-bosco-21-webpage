@@ -1,0 +1,125 @@
+/*CONFIGURACIÓN UNIVERSAL*/
+
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: 700;
+}
+
+body{
+    margin: 0;
+}
+
+/*NAV*/
+
+nav{
+    display: flex;
+    justify-content: flex-end;
+    height: 64px;
+    width: 100%;
+    min-width: 280px;
+    padding: 12px 24px;
+    border-radius: 0px 0px 24px 24px;
+    background-color: #FBF090;
+    box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
+}
+
+.user-info{
+    display: flex;
+    align-items: center;
+}
+
+.user-info .textbox{
+    margin-right: 8px;
+}
+
+.user-info p{
+    margin: 0px;
+}
+
+.user-info .username{
+    font-size: 1.6rem;
+    margin-bottom: 2px;
+}
+
+.user-info img{
+    height: 32px;
+}
+
+/*QUESTION MODULES*/
+
+.modules-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0px 12px 0px 12px;
+    width: 255px;
+    height: calc(100vh - 64px);
+    margin: auto;
+}
+
+.modules-container .title{
+    font-size: 1.6rem;
+    margin: 0px;
+}
+
+.question-module{
+    margin-top: 20px;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    padding: 12px 12px;
+    width: 255px;
+    max-height: 335px;
+    border-radius: 12px;
+}
+
+.question-module .question{
+    margin-top: 0px;
+    font-weight: 500;
+    font-size: 1.6rem;
+}
+
+.button-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.button-container button:nth-child(1){
+    margin-right: 4px;
+}
+
+.button-container button{
+    height: 48px;
+    width: 112px;
+    background-color: #FBF090;
+    border-radius: 4px;
+    border-style: none;
+    font-weight: 600;
+    font-family: 'Quicksand', sans-serif;
+    transition: background 0.2s ease-in-out;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #c9c074;
+}
+
+@media (min-width: 760px) {
+    .modules-container{
+        width: 480px;
+    }
+    
+    .question-module{
+        width: 464px;
+        padding: 20px 20px;
+    }
+
+    .button-container button{
+        width: 200px;
+    }
+}

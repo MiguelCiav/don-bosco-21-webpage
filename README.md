@@ -1,2 +1,3 @@
-# Grupo_Scout_Don_Bosco_Avila_Web_Oficial
-La página web del grupo scout don bosco 21, distrito ávila, región capital, Venezuela ;)
+# Don Bosco 21 webpage
+
+This is a frontend concept for a scout webpage. This webpage is not currently active.
